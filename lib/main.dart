@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
+import 'package:async/async.dart';
 import 'package:http/http.dart' as http;
 import "dart:convert";
 import 'home.dart';
@@ -9,7 +9,6 @@ const request = "https://api.hgbrasil.com/finance?key=$key";
 
 void main() async
 {
-  print(await getData());
   runApp(
     MaterialApp(
       theme: ThemeData(
